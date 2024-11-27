@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Tarta de Manzana</title>
+    <style>
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 10px;
+            top: 100px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:nth-child(1):hover {
+            background-color: #4CAF50;
+            transform: scale(1.1);
+        }
+
+        .button:nth-child(2):hover {
+            background-color: #2196F3;
+            transform: rotate(5deg);
+        }
+
+        .button:nth-child(3):hover {
+            background-color: #f44336;
+            transform: translateX(10px);
+        }
+
+        .button:nth-child(4):hover {
+            background-color: #FFEB3B;
+            transform: skewX(10deg);
+        }
+
+        .pagination {
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+
+        .noticia {
+            column-count: 3;
+            column-gap: 20px;
+            column-rule: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        #main-content {
+            padding: 20px;
+            margin-left: 150px; 
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Receta de Tarta de Manzana</h1>
+    </div>
+
+    <div id="main-content" class="recipe-section">
+        <div id="description">
+            <p>Esta deliciosa tarta de manzana es perfecta para cualquier ocasión. Sigue estos pasos para obtener un postre que encantará a todos.</p>
+        </div>
+
+        <div id="ingredients" class="ingredients">
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>3 manzanas grandes</li>
+                <li>200g de harina</li>
+                <li>100g de azucar</li>
+                <li>2 huevos</li>
+                <li>50g de mantequilla</li>
+                <li>1 cucharadita de canela</li>
+            </ul>
+        </div>
+
+        <div id="instructions" class="instructions">
+            <h2>Instrucciones</h2>
+            <ol>
+                <li>Pelar y cortar las manzanas en rodajas finas.</li>
+                <li>Mezclar la harina, azucar y canela en un bol grande.</li>
+                <li>Anadir los huevos y la mantequilla derretida, mezclar bien.</li>
+                <li>Colocar las rodajas de manzana en un molde y verter la mezcla encima.</li>
+                <li>Hornear a 180C durante 40 minutos o hasta que este dorada.</li>
+            </ol>
+        </div>
+
+        <div class="noticia">
+            "La tarta de manzana fue todo un exito! Segui la receta paso a paso, y me encanto lo facil que fue
+            prepararla. Las manzanas quedaron perfectamente cocidas, y el toque de canela le dio un aroma irresistible.
+            La textura es suave pero con un crujiente en los bordes que hace que cada bocado sea delicioso. Sin duda,
+            esta receta se ha convertido en una de mis favoritas para las reuniones familiares. Todos en casa pidieron
+            una segunda porcion."
+        </div>
+
+        <h2>Vertical Button Group</h2>
+
+        <div class="btn-group">
+            <button class="button">Button1</button>
+            <button class="button">Button2</button>
+            <button class="button">Button3</button>
+            <button class="button">Button4</button>
+        </div>
+
+        <div class="center">
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Recetas de Cocina &copy; 2024</p>
+    </div>
+
+</body>
+</html>
